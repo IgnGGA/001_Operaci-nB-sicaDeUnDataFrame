@@ -7,4 +7,6 @@ cargandoUnCSV()
 
 verTiposDeDatos=cargandoUnCSV().dtypes#Los datos de tipo OBJECT implican un string, INT64 un entero y FLOAT64 un decimal.
 extraerColumna=cargandoUnCSV()['RUT']#Para vicualizar solo una columna debemos llamar al dataframe, y agregar entre corchetes el nombre la columna de interes
-print(extraerColumna)
+extraerFila=cargandoUnCSV().loc[658]
+extrayendoFilas=cargandoUnCSV().loc[100:105]
+print(extrayendoFilas)
