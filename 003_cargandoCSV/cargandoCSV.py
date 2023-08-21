@@ -5,5 +5,6 @@ def cargandoUnCSV():
     return(datos)
 cargandoUnCSV()
 
-verTiposDeDatos=cargandoUnCSV().dtypes
-print(verTiposDeDatos)#Los datos de tipo OBJECT implican un string, INT64 un entero y FLOAT64 un decimal.
+verTiposDeDatos=cargandoUnCSV().dtypes#Los datos de tipo OBJECT implican un string, INT64 un entero y FLOAT64 un decimal.
+extraerColumna=cargandoUnCSV()['RUT']#Para vicualizar solo una columna debemos llamar al dataframe, y agregar entre corchetes el nombre la columna de interes
+print(extraerColumna)
